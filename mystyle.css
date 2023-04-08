@@ -1,0 +1,308 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* @media screen and(max-width:600px) {} */
+
+
+/* navigation bar */
+
+nav {
+  background-color: #333;
+  color: #fff;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+
+#admin {
+  margin-left: 690px;
+  display: inline-block;
+  padding: 0%;
+}
+
+
+
+
+/* display-image */
+
+.mid_containt {
+  height: 600px;
+  background-color: royalblue;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-evenly;
+  /* border: 3px solid rgb(26, 30, 26); */
+}
+
+.box1 {
+  position:relative;
+  margin-top: 157px;
+  margin-left: 60px;
+  margin-right: 30px;
+  position: sticky;
+}
+
+
+.box2 img {
+  height: 400px;
+  width: 400px;
+  z-index: 1;
+  margin-top: 100px;
+}
+
+.box2 h1 {
+  margin-top: 300px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.box2 span {
+  color: yellow;
+}
+
+.btn-x {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: red;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+
+}
+
+.btn-x:hover,
+.btn-x:focus,
+.btn-x:active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+/* about-engineer */
+
+.about-engineer {
+  margin: 50px 40px 40px 40px;
+}
+
+.about-engineer h1 {
+  text-align: center;
+}
+
+
+
+
+.service-image-one-div img {
+  width: auto;
+  height: 200px;
+  justify-items: center;
+  left: 200px;
+  margin-left: 30%;
+}
+
+
+
+
+/* services */
+.services {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* grid-template-rows: 300px 300px 300px 300px; */
+  /* justify-items:right; */
+  grid-column-gap: 50px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+
+}
+
+
+.item {
+
+  margin: 20px 40px;
+}
+
+
+.item img {
+  width: 280px;
+  height: 280px;
+
+
+}
+
+
+
+
+/* about_containt-service
+ */
+.about_containt-service {
+  margin: 30px 20px 30px 20px;
+  background-color: aliceblue;
+  /* height: 400px; */
+}
+
+
+
+
+
+/* service-type */
+.service-type {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 50px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+
+.type-item {
+  margin-left: 150px;
+}
+
+.type-item-containt {
+  margin-right: 50px;
+  background-color: rgb(171, 228, 210);
+  padding: 30px;
+}
+
+
+
+/* car-truck-container */
+.car-truck-container {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+
+.car-truck {
+  margin-left: 30%;
+}
+
+
+.car-truck img {
+  width: 450px;
+  height: 300px;
+
+}
+
+
+
+
+/* carservice-container */
+
+
+.carservice-container {
+  display: grid;
+  grid-template-rows: auto;
+
+}
+
+
+
+.carservice-item {
+  width: 100%;
+  height: 500px;
+  margin-top: 40px;
+  background-color: lightgrey;
+}
+
+
+.carservice-item img {
+  width: 500px;
+  height: 500px;
+  margin-left: 400px;
+  margin-top: 20px;
+}
+
+
+
+/* footer */
+.footer-one {
+  background-color: #333;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-column-gap: 50px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  height: 300px;
+}
+
+
+
+
+/* responsive for moible */
+
+@media screen and (max-width: 600px) {
+  #navigation{
+    position: relative;
+  }
+  nav ul {
+    flex-direction:column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  #admin {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .mid_containt{
+    flex-direction:column;
+    align-items: center;
+    margin-top: 400px;
+  }
+}
+
+

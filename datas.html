@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> customer-Appointments</title>
+    <link rel="stylesheet" href="datas.css">
+</head>
+
+<body>
+    <div id="nav">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="service-page.html">Services</a></li>
+                    <li><a href="aboutUsPage.html">About</a></li>
+                    <li><a href="contact-us.html">Contact-us</a></li>
+                    <li id="logout"><a href="admin.html">log out</a></li>
+                    
+                </ul>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <h2>APPOINTMENTS</h2>
+    <div id="user_dats">
+        
+        <div id="second_container">
+            <div class="form-data-css">
+                <label for="filter-date">Filter by Date:</label>
+                <input type="date" id="filter-date" name="filter-date">
+            </div>
+
+            <div class="form-data-css">
+                <label for="filter-by-name">Filter by Name:</label>
+                <input type="text" id="filter-by-name" name="filter-by-name">
+            </div>
+
+            <div class="form-data-css">
+                <label for="filter-by-time">Filter by Time:</label>
+                <input type="time" id="filter-by-time" name="filter-by-time">
+            </div>
+
+
+            <div class="form-data-css">                
+                <label for="filter-count">Result :</label>
+                <span id="filter-count"></span>
+            </div>
+        </div>
+
+
+        <table id="bookings">
+        
+            <!-- <tbody>
+                Booking entries will be dynamically added here using JavaScript
+            </tbody> -->
+        </table>
+    </div>
+
+    </div>
+    <script src="/datas.js"> </script>
+</body>
+
+</html>
